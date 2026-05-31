@@ -1,7 +1,12 @@
 ---
 title: "Acceso a espacios verdes y distribución territorial de la población en la Ciudad Autónoma de Buenos Aires"
 author: "Emens Tamara"
-format: html
+date: today
+format:
+  html:
+    toc: true
+    number-sections: true
+    theme: cosmo
 editor: visual
 ---
 
