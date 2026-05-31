@@ -7,6 +7,7 @@ Objetivo
 Analizar la distribución territorial de los espacios verdes públicos en la Ciudad Autónoma de Buenos Aires y su relación con la distribución de distintos grupos poblacionales.
 
 Estructura del repositorio
+
 datos/: datos utilizados para el análisis.
 
 figuras_y_tablas/: mapas, gráficos y tablas generados.
