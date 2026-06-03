@@ -10,30 +10,36 @@ format:
 editor: visual
 ---
 
-## Introducción 
+# Introducción
 
-Las ciudades presentan una distribución desigual de los espacios verdes públicos, lo que puede generar diferencias en el acceso a los beneficios ambientales, recreativos y sociales que estos espacios brindan. La proximidad a espacios verdes ha sido asociada con mejoras en la calidad de vida, la salud y el bienestar de la población.
+Las ciudades presentan una distribución desigual de los espacios verdes públicos lo que puede generar diferencias en el acceso a los beneficios ambientales, recreativos y sociales que estos espacios brindan. Diversos estudios han señalado que la proximidad a espacios verdes se asocia con mejoras en la calidad de vida, la salud física y mental, la recreación y la adaptación frente a fenómenos como las olas de calor.
 
-En este contexto, resulta relevante analizar cómo se distribuyen los espacios verdes dentro de la Ciudad Autónoma de Buenos Aires y si dicha distribución coincide con la localización de distintos grupos poblacionales.
+## Planteo del problema
 
-# Planteo del problema
+La Ciudad Autónoma de Buenos Aires presenta diferencias territoriales en términos de densidad poblacional, composición demográfica y disponibilidad de espacios verdes públicos. Sin embargo, no se conoce con certeza si la distribución de estos espacios coincide con la localización de grupos poblacionales que podrían presentar mayores necesidades potenciales de acceso a infraestructura verde urbana, como la población infantil, la población adulta mayor y los hogares con Necesidades Básicas Insatisfechas (NBI).
 
-La Ciudad Autónoma de Buenos Aires presenta importantes diferencias territoriales en términos de densidad poblacional, composición demográfica y disponibilidad de espacio público. Sin embargo, no se conoce con claridad si los sectores con mayor presencia de determinados grupos poblacionales cuentan con niveles similares de acceso a espacios verdes públicos.
+En este contexto, resulta pertinente analizar si existen desigualdades territoriales en el acceso a espacios verdes públicos y si estas afectan en mayor medida a determinados grupos de población dentro de la ciudad.
 
 ## Pregunta de investigación
 
-¿Existe una relación entre la distribución territorial de los espacios verdes públicos y la localización de distintos grupos poblacionales en la Ciudad Autónoma de Buenos Aires?
+¿La distribución territorial de los espacios verdes públicos en la Ciudad Autónoma de Buenos Aires coincide con la localización de grupos poblacionales con mayores necesidades potenciales de acceso a infraestructura verde urbana?
 
 ## Hipótesis
 
-Los sectores de la Ciudad Autónoma de Buenos Aires con mayor concentración de población infantil y/o condiciones de vulnerabilidad presentan menores niveles de acceso potencial a espacios verdes públicos.
+Los sectores de la Ciudad Autónoma de Buenos Aires con mayor presencia de población infantil, población adulta mayor y hogares con Necesidades Básicas Insatisfechas presentan menores niveles de acceso a espacios verdes públicos.
 
 # Objetivos
 
-## Objetivo general
-
-Analizar la distribución territorial de los espacios verdes públicos y su relación con la localización de distintos grupos poblacionales en la Ciudad Autónoma de Buenos Aires.
+Analizar la relación espacial entre la disponibilidad de espacios verdes públicos y la distribución territorial de poblaciones con mayores necesidades potenciales de acceso a infraestructura verde urbana en la Ciudad Autónoma de Buenos Aires.
 
 ## Objetivos específicos
 
-# Datos utilizados
+-   Identificar la distribución espacial de los espacios verdes públicos.
+
+-   Caracterizar la distribución territorial de la población infantil.
+
+-   Caracterizar la distribución territorial de la población adulta mayor.
+
+-   Caracterizar la distribución territorial de los hogares con NBI.
+
+-   Analizar la relación entre accesibilidad a espacios verdes y grupos poblacionales.

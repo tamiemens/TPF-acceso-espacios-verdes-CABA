@@ -1,10 +1,10 @@
  TPF - Acceso a espacios verdes y distribución territorial de la población en CABA
 
-Trabajo Práctico Final de la materia Análisis de Datos Espaciales.
+Trabajo Práctico Final de la materia Análisis de Datos Espaciales II.
 
 Objetivo
 
-Analizar la distribución territorial de los espacios verdes públicos en la Ciudad Autónoma de Buenos Aires y su relación con la distribución de distintos grupos poblacionales.
+Analizar la relación espacial entre la disponibilidad de espacios verdes públicos y la distribución territorial de poblaciones con mayores necesidades potenciales de acceso a infraestructura verde urbana en la Ciudad Autónoma de Buenos Aires.
 
 Estructura del repositorio
 
