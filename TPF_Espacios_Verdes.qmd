@@ -36,6 +36,8 @@ Analizar la relación espacial entre la disponibilidad de espacios verdes públi
 
 -   Identificar la distribución espacial de los espacios verdes públicos.
 
+<!-- -->
+
 -   Caracterizar la distribución territorial de la población infantil.
 
 -   Caracterizar la distribución territorial de la población adulta mayor.
@@ -43,3 +45,83 @@ Analizar la relación espacial entre la disponibilidad de espacios verdes públi
 -   Caracterizar la distribución territorial de los hogares con NBI.
 
 -   Analizar la relación entre accesibilidad a espacios verdes y grupos poblacionales.
+
+## Metodología
+
+```{r}
+# librerías
+library(tidyverse)
+library(sf)
+```
+
+```{r}
+# carga de dataset censo
+nbi      <- read_csv("datos/nbi_radios_caba.csv",
+                     col_types = cols(cod_radio = col_character()))
+infantil <- read_csv("datos/infantil_radios_caba.csv",
+                     col_types = cols(cod_radio = col_character()))
+mayores  <- read_csv("datos/adulta_mayor_radios_caba.csv",
+                     col_types = cols(cod_radio = col_character()))
+```
+
+```{r}
+#Unión de tablas con la estructura de la población (censo) 
+censo_radios <- infantil |>
+  left_join(select(mayores, cod_radio, pob_adulta_mayor, pct_adulta_mayor),
+            by = "cod_radio") |>
+  left_join(select(nbi, cod_radio, hogares_total, hogares_nbi, pct_nbi),
+            by = "cod_radio")
+
+nrow(censo_radios)
+colSums(is.na(censo_radios))
+```
+
+```{r}
+#unión de la tabla anterior con la columna espacial del censo
+
+radios <- sf::st_read("datos/RADIOS_2022_v1_0/radios2022_v1.0.shp")
+names(radios)
+sf::st_crs
+
+radios <- radios |>
+  mutate(cod_radio = paste0(
+    str_pad(PROV,  2, pad = "0"),
+    str_pad(DEPTO, 3, pad = "0"),
+    str_pad(FRAC,  2, pad = "0"),
+    str_pad(RADIO, 2, pad = "0")
+  ))
+
+#filtrar solo CABA 
+radios_caba <- radios |> filter(str_starts(cod_radio, "02"))
+nrow(radios_caba)            # cuántos radios tiene CABA en la geometría
+head(radios_caba$cod_radio)  # debería verse tipo "020070101"
+
+#corregir geometrías inválidas 
+radios_caba <- st_make_valid(radios_caba)
+
+#UNIR
+radios_datos <- radios_caba |>
+  left_join(censo_radios, by = "cod_radio")
+
+#verificar datos
+nrow(radios_datos)
+sum(is.na(radios_datos$pct_nbi))   
+class(radios_datos)                
+
+```
+
+*\
+*
+
+```{r}
+#carga dataframe espacios verdes
+espacios_verdes <- sf::st_read("datos/espacio_verde_publico/espacio_verde_publico.shp")
+
+names(espacios_verdes)     # columnas (tipo de espacio, nombre, superficie...)
+st_crs(espacios_verdes)    # en qué CRS viene
+nrow(espacios_verdes)      # cuántos polígonos
+```
+
+```{r}
+git status
+```

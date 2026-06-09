@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Emens Tamara">
-<meta name="dcterms.date" content="2026-06-02">
+<meta name="dcterms.date" content="2026-06-08">
 
 <title>Acceso a espacios verdes y distribución territorial de la población en la Ciudad Autónoma de Buenos Aires</title>
 <style>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 2, 2026</p>
+      <p class="date">June 8, 2026</p>
     </div>
   </div>
   
@@ -124,6 +124,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Caracterizar la distribución territorial de los hogares con NBI.</p></li>
 <li><p>Analizar la relación entre accesibilidad a espacios verdes y grupos poblacionales.</p></li>
 </ul>
+<p>nbi &lt;- readr::read_csv(“datos/procesados/nbi_radios_caba.csv”, col_types = readr::cols(cod_radio = “c”)) # “c” = texto, conserva el 0 inicial verdes &lt;- sf::st_read(“datos/crudos/espacios_verdes.geojson”)</p>
 </section>
 </section>
 
