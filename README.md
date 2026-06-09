@@ -17,5 +17,7 @@ TPF_Espacios_Verdes.qmd: documento principal del trabajo.
 TPF_Espacios_Verdes.html: versión renderizada del informe.
 
 Fuentes de datos
-Gobierno de la Ciudad de Buenos Aires.
-Instituto Nacional de Estadística y Censos (INDEC).
+Gobierno de la Ciudad de Buenos Aires: Extraído de Datos Abiertos de GCBA
+Instituto Nacional de Estadística y Censos (INDEC) y REDATAM: Extraído de https://redatam.indec.gob.ar/  
+Dataset limpio de los radios del Censo 2022 (Gonzalo M. Rodríguez del CEUR-CONICET) 
+extraído de: https://ri.conicet.gov.ar/handle/11336/238198 

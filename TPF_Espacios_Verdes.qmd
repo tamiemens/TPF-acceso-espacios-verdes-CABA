@@ -121,7 +121,3 @@ names(espacios_verdes)     # columnas (tipo de espacio, nombre, superficie...)
 st_crs(espacios_verdes)    # en qué CRS viene
 nrow(espacios_verdes)      # cuántos polígonos
 ```
-
-```{r}
-git status
-```
